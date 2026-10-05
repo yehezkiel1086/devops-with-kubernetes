@@ -1,0 +1,6 @@
+services:
+  log-output:
+    build: .
+    image: log-output:latest
+    container_name: log-output
+    restart: unless-stopped
