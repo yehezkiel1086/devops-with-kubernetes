@@ -9,3 +9,4 @@ https://courses.mooc.fi/org/uh-cs/courses/devops-with-kubernetes-2026/
 ### Chapter 2
 
 - [1.1. Log Output](/log_output/)
+- [1.2. Todo App](/todo_app/)
