@@ -10,3 +10,4 @@ https://courses.mooc.fi/org/uh-cs/courses/devops-with-kubernetes-2026/
 
 - [1.1. Log Output](/log_output/)
 - [1.2. Todo App](/todo_app/)
+- [1.3. Log Output: Declarative approach](/log_output/)
