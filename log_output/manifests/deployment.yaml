@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: log-output
+  name: log-output-dep
 spec:
   replicas: 1
   selector:
@@ -15,3 +15,6 @@ spec:
       containers:
         - name: log-output
           image: yehezkel1086/log-output:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080

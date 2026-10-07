@@ -23,5 +23,7 @@ WORKDIR /root/
 # copy the compiled binary from the builder stage
 COPY --from=builder /app/log-output .
 
+EXPOSE 8080
+
 # run the application
 CMD ["./log-output"]
