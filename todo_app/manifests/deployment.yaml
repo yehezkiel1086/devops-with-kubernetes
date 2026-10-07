@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todo-app
+  name: todo-app-dep
 spec:
   replicas: 1
   selector:
@@ -15,14 +15,12 @@ spec:
       containers:
         - name: todo-app
           image: yehezkel1086/todo-app:latest
-          ports:
-            - containerPort: 8080
           env:
             - name: APP_NAME
               value: "todo_app"
             - name: APP_ENV
               value: "development"
             - name: HTTP_HOST
-              value: "127.0.0.1"
+              value: "0.0.0.0"
             - name: HTTP_PORT
               value: "8080"
